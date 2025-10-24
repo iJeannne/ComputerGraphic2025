@@ -19,7 +19,7 @@ void cg::renderer::rasterization_renderer::init()
 void cg::renderer::rasterization_renderer::render()
 {
 	auto start = std::chrono::high_resolution_clock::now();
-	rasterizer->clear_render_target({0, 0, 0});
+	rasterizer->clear_render_target({47, 171, 44}); //зеленый фон
 
 	float4x4 matrix = mul(
 			camera->get_projection_matrix(),
