@@ -72,6 +72,13 @@ namespace cg
 	{
 		return data.size() * item_size;
 	}
+
+	template<typename T>
+	inline size_t resource<T>::count() const
+	{
+		return data.size();
+	}
+
 	template<typename T>
 	inline size_t resource<T>::get_number_of_elements() const
 	{
